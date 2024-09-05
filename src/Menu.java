@@ -11,8 +11,9 @@ public class Menu {
 
     public void showMenu(Scanner sc) {
         int op = 0;
+        Soma sum = new Soma();
         System.out.println("Bem vindo");
-        System.out.println("Este programa é uma calculadora onde opera com dois parâmetros");
+        System.out.println("Este programa é uma calculadora onde opera com dois números");
         do {
             try {
                 System.out.println("Digite a operação desejada");
@@ -28,7 +29,9 @@ public class Menu {
                     case 0:
                         System.exit(0);
                     case 1:
-                        //soma
+                        sum.menuSoma(sc);
+                        sum.escreverResultado();
+                        System.exit(0);
                     case 2:
                         //subtração
                     case 3:
