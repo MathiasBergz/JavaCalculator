@@ -13,6 +13,7 @@ public class Menu {
         int op = 0;
         Soma sum = new Soma();
         Subtracao sub = new Subtracao();
+        Multi multi = new Multi();
         System.out.println("Bem vindo");
         System.out.println("Este programa é uma calculadora onde opera com dois números");
         do {
@@ -38,7 +39,9 @@ public class Menu {
                         sub.escreverResultado();
                         System.exit(0);
                     case 3:
-                        //multiplicação
+                        multi.menuMultiplicacao(sc);
+                        multi.escreverResultado();
+                        System.exit(0);
                     case 4:
                         //divisão
                     default:
