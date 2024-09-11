@@ -1,13 +1,13 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Subtraction {
+public class Subtracao {
     private double value1;
     private double value2;
     private double result;
     private boolean error = false;
 
-    public Subtraction() {
+    public Subtracao() {
 
     }
 
@@ -27,6 +27,6 @@ public class Subtraction {
     }
 
     public void escreverResultado() {
-        System.out.println("O resultado da soma " + value1 + " " + value2 + " é: " + result);
+        System.out.println("O resultado da subtração " + value1 + " " + value2 + " é: " + result);
     }
 }

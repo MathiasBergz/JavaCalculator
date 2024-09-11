@@ -12,7 +12,7 @@ public class Menu {
     public void showMenu(Scanner sc) {
         int op = 0;
         Soma sum = new Soma();
-        Subtraction sub = new Subtraction();
+        Subtracao sub = new Subtracao();
         System.out.println("Bem vindo");
         System.out.println("Este programa é uma calculadora onde opera com dois números");
         do {
