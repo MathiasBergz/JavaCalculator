@@ -12,18 +12,11 @@ public class Multi {
     }
 
     public void menuMultiplicacao(Scanner sc) {
-        do {
-            try {
                 System.out.println("Digite o primeiro número: ");
                 this.value1 = sc.nextDouble();
                 System.out.println("Digite o segundo número: ");
                 this.value2 = sc.nextDouble();
                 this.result = this.value1 * this.value2;
-            } catch (InputMismatchException ime) {
-                System.err.println("Digite apenas números");
-                this.error = true;
-            }
-        } while(this.error);
     }
 
     public void escreverResultado() {
